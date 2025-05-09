@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<manifest identifier="Course_ID1" version="1.3"
+	  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+	  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+	  xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+	  xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+	  xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+	  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+						  http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+						  http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+						  http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>2004 3rd Edition</schemaversion>
+		<adlcp:location>metadata.xml</adlcp:location>
+	</metadata>
+	
+	
+	<organizations default="Course_ID1_ORG">
+		<organization identifier="Course_ID1_ORG">
+			<!--****** Title ******-->
+			<title>Captivate E-Learning Course</title>
+			<item identifier="Course_ID1_SCO" identifierref="Course_ID1_SCO_RES" isvisible="true">
+				<!--****** Title ******-->
+				<title>Course Object title</title>
+				<metadata>
+					<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM lom.xsd">
+						<general>
+							<description>
+				  				<string language="en-us">Course Description.</string> 
+				  			</description>
+						</general>
+					</lom>
+				</metadata>
+				<imsss:sequencing>
+				<imsss:objectives>
+					        <imsss:primaryObjective objectiveID="Quiz_2025581643"/>
+				</imsss:objectives>
+					<imsss:deliveryControls tracked="true" completionSetByContent="true" objectiveSetByContent="true"/>
+				</imsss:sequencing>
+			</item>
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>			
+	<imsss:sequencing>
+				<imsss:controlMode choice="true" flow="true"/>
+                <imsss:rollupRules>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="satisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="satisfied"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="notSatisfied"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="completed"/>
+                    </imsss:rollupRule>
+                    <imsss:rollupRule childActivitySet="all">
+                        <imsss:rollupConditions>
+                            <imsss:rollupCondition operator="not" condition="completed"/>
+                        </imsss:rollupConditions>
+                        <imsss:rollupAction action="incomplete"/>
+                    </imsss:rollupRule>
+                </imsss:rollupRules>
+			</imsss:sequencing>
+		</organization>
+	</organizations>
+	<resources>
+		<resource adlcp:scormType="sco" identifier="Course_ID1_SCO_RES" type="webcontent" href="index.html">
+			<metadata>
+				<adlcp:location>metadata.xml</adlcp:location>
+			</metadata>
+			
+			<file href="ar/6826.mp3"></file>
+			<file href="index.html"></file>
+			<file href="scormdriver.js"/>
+			<file href="browsersniff.js"/>
+			
+<file href="assets/htmlimages/Answer_checkbox_correct.png"/> 
+<file href="assets/htmlimages/Answer_checkbox_incorrect.png"/> 
+<file href="assets/htmlimages/Answer_radio_correct.png"/> 
+<file href="assets/htmlimages/Answer_radio_incorrect.png"/> 
+<file href="assets/htmlimages/Download_certificate_icon.svg"/> 
+<file href="assets/htmlimages/img_trans.gif"/> 
+<file href="assets/js/project.js"/> 
+<file href="dist/main.chunk.js"/> 
+<file href="dist/main.chunk.js.br"/> 
+<file href="dist/runtime-main.bundle.js"/> 
+<file href="dist/vendors-main.chunk.js"/> 
+<file href="dist/vendors-main.chunk.js.LICENSE.txt"/> 
+<file href="dist/vendors-main.chunk.js.br"/> 
+<file href="dr/01104.png"/> 
+<file href="dr/01216.png"/> 
+<file href="dr/01328.png"/> 
+<file href="dr/01440.png"/> 
+<file href="dr/01553.png"/> 
+<file href="dr/01590.png"/> 
+<file href="dr/01703.png"/> 
+<file href="dr/01816.png"/> 
+<file href="dr/01929.png"/> 
+<file href="dr/02041.png"/> 
+<file href="dr/02153.png"/> 
+<file href="dr/02265.png"/> 
+<file href="dr/02637.png"/> 
+<file href="dr/02749.png"/> 
+<file href="dr/02861.png"/> 
+<file href="dr/02973.png"/> 
+<file href="dr/03085.png"/> 
+<file href="dr/03309.png"/> 
+<file href="dr/03533.png"/> 
+<file href="dr/03645.png"/> 
+<file href="dr/03757.png"/> 
+<file href="dr/04129.png"/> 
+<file href="dr/04241.png"/> 
+<file href="dr/04353.png"/> 
+<file href="dr/0440.png"/> 
+<file href="dr/04466.png"/> 
+<file href="dr/04691.png"/> 
+<file href="dr/04803.png"/> 
+<file href="dr/04915.png"/> 
+<file href="dr/05139.png"/> 
+<file href="dr/05251.png"/> 
+<file href="dr/05364.png"/> 
+<file href="dr/0552.png"/> 
+<file href="dr/05589.png"/> 
+<file href="dr/05701.png"/> 
+<file href="dr/05814.png"/> 
+<file href="dr/06172.png"/> 
+<file href="dr/06285.png"/> 
+<file href="dr/06398.png"/> 
+<file href="dr/06511.png"/> 
+<file href="dr/0664.png"/> 
+<file href="dr/06739.png"/> 
+<file href="dr/0776.png"/> 
+<file href="dr/0888.png"/> 
+<file href="dr/loading.gif"/> 
+<file href="goodbye.html"/> 
+<file href="index.html"/> 
+<file href="pools/243/243.js"/> 
+<file href="project.txt"/> 
+<file href="Utilities.js"/> 
+            </resource>
+	</resources>
+</manifest>
